@@ -3,21 +3,23 @@
     
     <head>
         <title>Juxtaposr</title>
-        <link rel="stylesheet" type="text/css" href="https://c9.io/yotamh/juxt/workspace/juxt.css">
+        <link rel="stylesheet" type="text/css" href="juxt.css">
     </head>
     
     <body>
         <nav>
             <h1>
-                <select id=dropdown onchange="location = this.options[this.selectedIndex].value;">
-                    <option value="view.ejs.html">Book</option>
+                <!-- <select id=dropdown onchange="location = this.options[this.selectedIndex].value;"> -->
+                    <!-- <option value="view.ejs.html">Book</option> -->
                     <!--<option value="poster.html">Poster</option>-->
                     <!--<option value="tshirt.html">T-Shirt</option>-->
                     <!--<option value="logo.html">Logo</option>-->
-                </select>Juxtaposr</h1>
+                <!-- </select> -->
+                Juxtaposr
+            </h1>
         </nav>
         <div id=spread>
-            <img id=booksvg src="https://c9.io/yotamh/juxt/workspace/book4.svg">
+            <img id=booksvg src="book4.svg">
             <form method="post" onsubmit="return sendWord()">
                 <input type=text id="word" autofocus maxlength=12 placeholder="________"
                 value="<%= word %>">
