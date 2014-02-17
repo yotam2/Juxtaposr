@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Juxtaposr</title>
+        <link rel="stylesheet" type="text/css" href="https://c9.io/yotamh/juxt/workspace/juxt.css">
+    </head>
+    
+    <body>
+        <nav>
+            <h1>
+                <select id=dropdown onchange="location = this.options[this.selectedIndex].value;">
+                    <option value="view.ejs.html">Book</option>
+                    <!--<option value="poster.html">Poster</option>-->
+                    <!--<option value="tshirt.html">T-Shirt</option>-->
+                    <!--<option value="logo.html">Logo</option>-->
+                </select>Juxtaposr</h1>
+        </nav>
+        <div id=spread>
+            <img id=booksvg src="https://c9.io/yotamh/juxt/workspace/book4.svg">
+            <form method="post" onsubmit="return sendWord()">
+                <input type=text id="word" autofocus maxlength=12 placeholder="________"
+                value="<%= word %>">
+            </form>
+            <h6>Press Enter</h6>
+            <div>
+                <img id=image src="https://farm<%= farm %>.staticflickr.com/<%= server %>/<%= id %>_<%= secret %>.jpg"></img>
+            </div>
+        </div>
+        <footer>
+            <a href="https://www.dropbox.com/sh/ix0u7mv897bbg9s/RXYog7Jik6">Best of Juxtaposr</a> • Thesaurus service provided by
+            <a href="http://words.bighugelabs.com">words.bighugelabs.com</a>
+        </footer>
+        <script type="text/javascript">
+            function sendWord() {
+                var urlword = document.getElementById("word").value;
+                window.location.href = urlword;
+                console.log(urlword);
+                return false;
+            }
+        </script>
+    </body>
+
+</html>
