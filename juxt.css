@@ -18,11 +18,12 @@
         letter-spacing:1px;
     }
     h1 {
-        font-size:32px;
+        font-size:36px;
         font-family:arial narrow;
-        margin:17px;
+        margin:14px;
         color:black;
         font-weight:bold;
+        letter-spacing: -0.5px;
     }
     #dropdown {
         font-size:32px;
